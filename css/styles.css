@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393E46;
+    text-align: center;
+}
+
+#title>pre {
+    font-family: 'Acme', sans-serif;
+    font-size: 6rem;
+    color: #4ECCA3;
+    padding: 2rem 0;
+}
+
+p {
+    color: #4ECCA3;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.dice-container {
+    display: inline-block;
+    padding: 0 2rem 2rem 2rem;
+}
+
+img {
+    width: 75%;
+}
+
+footer p {
+    color: rgb(224, 224, 224);
+    font-size: 1rem;
+    margin: 2rem auto;
+}
+
+.flag-img-1,
+.flag-img-2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.flag-img-1 {
+    top: 100px;
+    left: 100px;
+    transform: rotate(-30deg);
+}
+
+.flag-img-2 {
+    top: 100px;
+    right: 100px;
+    transform: scaleX(-1) rotate(-30deg);
+}
+
+.flag-img-1-on-draw {
+    width: 75px;
+    height: 75px;
+    top: 160px;
+    left: 576px;
+    transform: scaleX(-1) rotate(30deg);
+}
+
+.flag-img-2-on-draw {
+    width: 75px;
+    height: 75px;
+    top: 160px;
+    right: 576px;
+    transform: rotate(30deg);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media (max-width: 870px) {
+
+    #title>pre {
+        font-size: 3rem;
+        padding: 2rem 0;
+    }
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        padding-top: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .dice-container {
+        width: 50%;
+        padding: 0;
+    }
+
+    .flag-img-1,
+    .flag-img-2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flag-img-1 {
+        top: 95px;
+        left: 80px;
+    }
+
+    .flag-img-2 {
+        top: 95px;
+        right: 80px;
+    }
+
+    .flag-img-1-on-draw {
+        width: 50px;
+        height: 50px;
+        top: 105px;
+        left: 152px;
+    }
+
+    .flag-img-2-on-draw {
+        width: 50px;
+        height: 50px;
+        top: 105px;
+        right: 152px;
+    }
+}
